@@ -33,6 +33,7 @@ ul {
 	width: 100%;
 	text-align: center;
 	background-color: #FFFFFF;
+	z-index: 999;
 }
 
 #topNav a {
