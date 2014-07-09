@@ -16,7 +16,7 @@
 
 <body>
 	<nav id="topNav">
-		<a href="/index.html">home</a>
+		<a href="/index.php">home</a>
 		<a href="#" onclick="ready();">contact</a>
-		<a href="#" onclick="ready();">guest</a>
+		<a href="guestbook.php">guestbook</a>
 	</nav>

@@ -24,7 +24,6 @@ ul {
 /**********************************************************************/
 #container {
 	position: relative;
-	height: 960px;
 }
 
 #topNav {
@@ -60,7 +59,7 @@ a:hover {
 aside {
 	position: absolute;
 	float: left;
-	width: 200px;
+	width: 15%;
 	padding: 20px;
 	margin: 20px;
 }
@@ -80,7 +79,7 @@ nav {
 
 .topMenu > li {
 	padding-bottom: 10px;
-	font-size: 17px;
+	font-size: 1.3em;
 }
 
 .topMenu > li:hover li {
@@ -89,12 +88,17 @@ nav {
 
 .subMenu > li {
 	padding-top: 5px;
-	font-size: 15px;
+	font-size: 0.8em;
 	display: none;
 }
 
 section {
 	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 150px;
+	text-align: left;
+	height: 960px;
 }
 
 img:hover {
@@ -110,4 +114,36 @@ img:hover {
 	height: 50px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+/********************************************************/
+#guestbook {
+	position: relative;
+	text-align: left;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+table {
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 30px;
+	border-bottom: 1px solid;
+}
+
+th {
+	width: 100px;
+}
+
+td {
+	padding: 10px;
+}
+.date {
+	text-align: right;
+	font-size: 0.8em;
+}
+.comment {
+	height: 100px;
 }

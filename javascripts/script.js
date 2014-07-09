@@ -2,7 +2,7 @@
  * @author jyb
  */
 
-
+/* footer bottom fix function */
 // Min-Height를 지정해 주기 위해 기존 Default Height를 저장
 var Height_Index = Number(document.getElementById("container").clientHeight);
 // Window 창 로드시
@@ -28,3 +28,4 @@ function changeContentSize() {
 function ready() {
 	alert("아직 준비중입니다...");
 }
+
