@@ -2,7 +2,7 @@
 This is my blog source. I made it using HTML5, CSS3, Javascript.
 
 #If you want to make Guestbook
-> I used PHP 5.2 and MySQL 14.14.
+> I used PHP 5.2 and MySQL 5.1.
 
 If you want to make Guestbook. You have to make table in your own database.
 
