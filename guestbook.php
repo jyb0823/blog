@@ -18,20 +18,22 @@
 		<input type="submit" value="submit">
 	</form>
 	
-	<?php
-	require_once("config.php");
-	
-	$result = mysql_query("SELECT * FROM GUESTBOOK ORDER BY regDate DESC");
-	
-	echo "<div id=\"comments\">";
-	while($row = mysql_fetch_array($result)) {						
-		echo "<table><th>Name : </th><td class=\"name\">".htmlspecialchars($row['name'])."</td>";
-		echo "<tr><th>Email : </th><td class=\"email\">".htmlspecialchars($row['email'])."</td></tr>";
-		echo "<tr><th>Comment : </th><td class=\"comment\">".htmlspecialchars($row['comment'])."</td></tr>";		
-        echo "<tr><td class=\"date\" colspan=\"2\">".$row['regDate']."</td></tr></table>";	
-	};
-	echo "</div>";
-	?>
+	 <?php
+        require_once("config.php");
+
+        $sql = "SELECT * FROM guestbook order by regDate desc";
+        $result = $conn->query($sql);
+
+        echo "<div id=\"comments\">";
+        while($row = $result->fetch_assoc()) {
+         echo "<table><th>Name : </th><td class=\"name\">". $row['name']."/<td>";
+         echo "<tr><th>Email : </th><td class=\"email\">".$row['email']."</td></tr>";
+         echo "<tr><th>Comment : </th><td class=\"comment\">".$row['comment']."</td></tr>";  
+         echo "<tr><td class=\"date\" colspan=\"2\">".$row['regDate']."</td></tr></table>";
+
+        };
+        echo "</div>";
+     ?>
 	
 	
 </div>
