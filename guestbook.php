@@ -19,17 +19,17 @@
 	</form>
 	
 	 <?php
-        require_once("config.php");
+        require 'config.php';
 
         $sql = "SELECT * FROM guestbook order by regDate desc";
         $result = $mysqli->query($sql);
 
         echo "<div id=\"comments\">";
         while($row = $result->fetch_assoc()) {
-         echo "<table><th>Name : </th><td class=\"name\">". htmlspecialchars($row['name'])."/<td>";
+         echo "<table><th>Name : </th><td class=\"name\">". htmlspecialchars($row['name'])."</td>";
          echo "<tr><th>Email : </th><td class=\"email\">".htmlspecialchars($row['email'])."</td></tr>";
          echo "<tr><th>Comment : </th><td class=\"comment\">".htmlspecialchars($row['comment'])."</td></tr>";  
-         echo "<tr><td class=\"date\" colspan=\"2\">".$row['regDate']."</td></tr></tab)le>";
+         echo "<tr><td class=\"date\" colspan=\"2\">".$row['regDate']."</td></tr></table>";
 
         };
         echo "</div>";
