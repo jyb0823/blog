@@ -29,3 +29,25 @@ function ready() {
 	alert("아직 준비중입니다...");
 }
 
+function check() {
+	for(var i = 0; i < 4; i++) {
+		if(document.guestbook.elements[i].value == '') {
+			switch(i) {
+				case 0:
+				alert('이름을 입력해주세요');
+				document.guestbook.elements[i].focus();
+				return false;
+				
+				case 2:
+				alsert('패스워드를 입력해주세요');
+				document.guestbook.elements[i].focus();
+				return false;
+				
+				case 3:
+				alert('코멘트를 입력해주세요');
+				document.guestbook.elements[i].focus();
+				return false;
+			}
+		}
+	}
+}

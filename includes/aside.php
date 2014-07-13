@@ -19,7 +19,7 @@
                        <li><a href="#" onclick="ready();">Web Programming</a></li>
                        <li><a href="#" onclick="ready();">Java</a></li>
                        <li><a href="#" onclick="ready();">MySQL</a></li>
-                       <li><a href="#" onclick="ready();">Android</a></li>
+                       <li class="last"><a href="#" onclick="ready();">Android</a></li>
                    </ul>                   
                </li>
                <li>
@@ -32,7 +32,7 @@
                 	<li><a href="#" onclick="ready();">PHP</a></li>
                 	<li><a href="#" onclick="ready();">MySQL</a></li>
                 	<li><a href="#" onclick="ready();">Linux</a></li>
-                	<li><a href="#" onclick="ready();">Node.js</a></li>
+                	<li class="last"><a href="#" onclick="ready();">Node.js</a></li>
                 </ul>
                </li>            
                <li><a href="#" onclick="ready();">Develop</a></li>

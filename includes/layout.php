@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 <head>
  <meta charset="utf-8">
 
@@ -8,7 +8,7 @@
  <meta name="keywords" content="와이빈, ybin, 블로그, 개발자, C, Java, Android, HTML5, Javascript, Node.js">
  <meta name="author" content="Jang young bin">
 
- <meta name="viewport" content="width=device-width; initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  <link rel="stylesheet" href="styles/style.css">
  <script type="text/javascript" src="javascripts/script.js"></script>

@@ -4,7 +4,7 @@
 <div id="container">   
  	
    <header>
-     <h1>반갑습니다</h1>
+     <h1>Welcome!</h1>
    </header>      
    
    <?php
