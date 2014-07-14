@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="utf-8">
+
+  <title>calculator</title>
+  <meta name="description" content="Calculator with JavaScript">
+  <meta name="author" content="Jang Young bin">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <script type="text/javascript">
+      function input(num) {
+          document.calForm.result.value += num;
+      }
+      
+      function cal() {
+          document.calForm.result.value = eval(document.calForm.result.value);
+      }
+  </script>
+
+</head>
+
+<body>
+  <form name="calForm">
+      <table border="0" width="320">
+          <tr>
+              <td colspan="4">
+                  <input type="text" style="width:100%; height:30px;" name="result">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="1" onclick="input('1')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="2" onclick="input('2')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="3" onclick="input('3')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="+" onclick="input('+')">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="4" onclick="input('4')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="5" onclick="input('5')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="6" onclick="input('6')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="-" onclick="input('-')">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="7" onclick="input('7')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="8" onclick="input('8')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="9" onclick="input('9')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="*" onclick="input('*')">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="0" onclick="input('0')">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="=" onclick="cal()">
+              </td>
+              <td>
+                  <input type="reset" style="width:100%; height:50px;" value="C">
+              </td>
+              <td>
+                  <input type="button" style="width:100%; height:50px;" value="/" onclick="input('/')">
+              </td>
+          </tr>
+      </table>
+  </form>
+</body>
+</html>

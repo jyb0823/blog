@@ -9,12 +9,28 @@
  <meta name="author" content="Jang young bin">
 
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+ <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+ 
  <link rel="stylesheet" href="styles/style.css">
+ 
  <script type="text/javascript" src="javascripts/script.js"></script>
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+ 
+<!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+ 
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
 </head>
 
 <body>
+
 	<nav id="topNav">
 		<a href="/index.php">home</a>
 		<a href="#" onclick="ready();">contact</a>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <title>BoundBall</title>
+        <style>
+            form {width: 330px;
+            margin: 20px;
+            background-color: brown;
+            padding: 20px;
+            }
+        </style>
+        <script type="text/javascript">
+            var boxx = 20;
+            var boxy = 30;
+            var boxwidth = 350;
+            var boxheight =250;
+            var ballrad = 10;
+            var boxboundx = boxwidth + boxx - ballrad;
+            var boxboundy = boxheight + boxy - ballrad;
+            var inboxboundx = boxx + ballrad;
+            var inboxboundy = boxy + ballrad;
+            var ballx = 50;
+            var bally = 60;
+            var ctx;
+            var ballvx = 4;
+            var ballvy = 8;       
+            
+            
+            function init() {
+                ctx = document.getElementById('canvas').getContext('2d');
+                ctx.linewidth = ballrad;
+                moveball();
+                ctx.fillStyle = "rgb(200, 0, 50)";
+                setInterval(moveball, 100);
+            }        
+            
+            function moveball() {
+                ctx.clearRect(boxx, boxy, boxwidth, boxheight);
+                moveandcheck(boxboundx, boxboundy, inboxboundx, inboxboundy);                
+                
+                ctx.beginPath();
+                ctx.arc(ballx, bally, ballrad, 0, Math.PI*2, true);
+                ctx.fill();
+                ctx.strokeRect(boxx, boxy, boxwidth, boxheight);
+            }
+            
+            function moveandcheck(boundx, boundy, inboundx, inboundy) {
+                var nballx = ballx + ballvx;
+                var nbally = bally + ballvy;
+                if(nballx > boundx) {
+                    ballvx = -ballvx;
+                    nballx = boundx;
+                }
+                if(nballx < inboundx) {
+                    nballx = inboundx;
+                    ballvx = -ballvx;
+                }
+                if(nbally > boundy) {
+                    nbally = boundy;
+                    ballvy = -ballvy;
+                }
+                if(nbally < inboundy) {
+                    nbally = inboundy;
+                    ballvy = -ballvy;
+                }                
+                
+                ballx = nballx;
+                bally = nbally;
+            }
+            function change() {
+                ballvx = Number(f.hv.value);
+                ballvy = Number(f.vv.value);
+                return false;
+            }
+
+        </script>
+    </head>
+    
+    <body onload="init();">
+        <canvas id="canvas" width="400" height="300">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <br />
+        <form name="f" id="f" onsubmit="return change();">
+            수평 속도 <input name="hv" id="hv" value="4" type="number" min="-10" max="20" />
+          <br />
+          수직 속도 <input name="vv" id="vv" value="8" type="number" min="-10" max="20" />        
+        <input type="submit" value="변경" />
+        </form>
+        
+    </body>
+</html>

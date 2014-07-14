@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Square</title>
+        
+        <script type="text/javascript">
+            var ctx;            
+            var angle = 0;
+            function init() {
+                ctx = document.getElementById('canvas').getContext("2d");
+               
+                setInterval(drawRotate, 100);
+            }
+            function drawRotate() {
+                angle += 3;
+                angle = angle % 360;
+                rangle = angle * Math.PI/180;               
+                ctx.fillStyle = "rgb(250, 0, 0)";                                
+                ctx.clearRect(0, 0, 400, 300);
+                ctx.save();
+                ctx.translate(100, 100);
+                ctx.rotate(rangle);
+                ctx.translate(-100, -100);
+                ctx.fillRect(100, 100, 100, 200);
+                ctx.rotate(rangle);
+                ctx.restore();
+                ctx.fillStyle = "rgb(0, 0, 250)";
+                ctx.fillRect(100, 100, 5, 5);
+            }
+
+        </script>
+    </head>
+    
+    <body onload="init();">
+        <canvas id="canvas" width="400" height="300">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+    </body>
+</html>
