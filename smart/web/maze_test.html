@@ -58,12 +58,6 @@
               if(this.sy < 15 || this.sy > cheight - 15) {
                   this.sy -= dy;
               }
-              if(intersect(point.sx, point.sy, point.fx, point.fy, this.sx, this.sy, this.rad)) {
-                  this.sx -= dx;
-                  this.sy -= dy;
-                  alert("도착!");
-                  break;
-              }
           }
           
           function Wall(sx, sy, fx, fy, width, stylestring) {

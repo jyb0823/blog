@@ -35,4 +35,32 @@
 		<a href="/index.php">home</a>
 		<a href="#" onclick="ready();">contact</a>
 		<a href="guestbook.php">guestbook</a>
+		<img id="imgMenu" src="images/menu.png" onclick="toggleMenu();">
+		<ul id="toggleMenu" style="display: none;">
+               <li><a href="index.php">Home</a></li>
+               <li>
+                   <a href="#"><b>스마트 콘텐츠 교육</b></a>                 
+                   <ul class="subMenu">
+                       <li><a href="web.php">Web Programming</a></li>
+                       <li><a href="#" onclick="ready();">Java</a></li>
+                       <li><a href="#" onclick="ready();">MySQL</a></li>
+                       <li class="last"><a href="#" onclick="ready();">Android</a></li>
+                   </ul>                   
+               </li>
+               <li>
+               	<a href="#" onclick="ready();">Study</a>
+                <ul class="subMenu">
+                	<li><a href="#" onclick="ready();">C/C++</a></li>
+                	<li><a href="#" onclick="ready();">Java</a></li>
+                	<li><a href="#" onclick="ready();">HTML/CSS</a></li>
+                	<li><a href="#" onclick="ready();">JavaScript</a></li>
+                	<li><a href="#" onclick="ready();">PHP</a></li>
+                	<li><a href="#" onclick="ready();">MySQL</a></li>
+                	<li><a href="#" onclick="ready();">Linux</a></li>
+                	<li class="last"><a href="#" onclick="ready();">Node.js</a></li>
+                </ul>
+               </li>            
+               <li><a href="#" onclick="ready();">Develop</a></li>
+               
+         </ul>
 	</nav>

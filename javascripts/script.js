@@ -3,14 +3,14 @@
  */
 
 /* footer bottom fix function */
-// Min-Height를 지정해 주기 위해 기존 Default Height를 저장
-var Height_Index = Number(document.getElementById("container").clientHeight);
-// Window 창 로드시
-window.onload = changeContentSize;
-// Window 창 크기를 조정할때마다
-window.onresize = changeContentSize;
 
-function changeContentSize() {
+window.onload = function changeContentSize() {
+    // Min-Height를 지정해 주기 위해 기존 Default Height를 저장
+    var Height_Index = Number(document.getElementById("container").clientHeight);
+    // Window 창 로드시
+    window.onload = changeContentSize;
+    // Window 창 크기를 조정할때마다
+    window.onresize = changeContentSize;
 	var Height_Window = Number(document.documentElement.clientHeight);
 	// Window 창 높이
 	var Height_Footer = Number(document.getElementById("footer").clientHeight);
@@ -49,5 +49,14 @@ function check() {
 				return false;
 			}
 		}
+	}
+}
+
+function toggleMenu(){
+	var menu = document.getElementById('toggleMenu');
+	if(menu.style.display == 'none') {
+		menu.style.display = 'block'
+	} else {
+		menu.style.display = 'none';
 	}
 }

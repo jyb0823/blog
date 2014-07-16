@@ -1,16 +1,16 @@
 <aside>
        <div id="profile">
            <p>Profile</p>            
-           <img src="images/profile.jpg" style="width:150px; height:100px" alt="my profile image">
+           <img src="images/profile.jpg" alt="my profile image">
            <p>개발자를 꿈꾸는 <strong>ybin</strong>의 블로그입니다. 충북대학교 4학년에 재학중이며, 이 곳은 저의 프로젝트를 올리고 공유하는 공간입니다.</p>
            <div id="socialMediaIcon">
-             <a href="http://facebook.com/jyb0823" target="_blank"><img src="images/facebook.png" style="width:30px; height: 30px" alt=m"facebook"></a>
-             <a href="http://github.com/jyb0823" target="_blank"><img src="images/github.png" style="width:30px; height: 30px" alt=m"github"></a>
-             <a href="mailto:jyb0823@gmail.com"><img src="images/email.png" style="width:30px; height: 30px" alt=m"gmail"></a>
+             <a href="http://facebook.com/jyb0823" target="_blank"><img src="images/facebook.png" style="width:30px; height: 30px" alt="facebook"></a>
+             <a href="http://github.com/jyb0823" target="_blank"><img src="images/github.png" style="width:30px; height: 30px" alt="github"></a>
+             <a href="mailto:jyb0823@gmail.com"><img src="images/email.png" style="width:30px; height: 30px" alt="gmail"></a>
           </div>
        </div>
        
-       <nav>
+       <nav id="sideNav">
            <ul class="topMenu">
                <li><a href="index.php">Home</a></li>
                <li>
