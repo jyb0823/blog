@@ -9,12 +9,12 @@
  <meta name="author" content="Jang young bin">
 
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
- <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+ <link rel="shortcut icon" href="/images/favicon.ico" type="/image/x-icon">
+ <link rel="icon" href="/images/favicon.ico" type="/image/x-icon">
  
- <link rel="stylesheet" href="styles/style.css">
+ <link rel="stylesheet" href="/styles/style.css">
  
- <script type="text/javascript" src="javascripts/script.js"></script>
+ <script type="text/javascript" src="/javascripts/script.js"></script>
 <!--[if lt IE 9]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 <![endif]-->
@@ -34,10 +34,10 @@
 	<nav id="topNav">
 		<a href="/index.php">home</a>
 		<a href="#" onclick="ready();">contact</a>
-		<a href="guestbook.php">guestbook</a>
-		<img id="imgMenu" src="images/menu.png" onclick="toggleMenu();">
+		<a href="/guestbook.php">guestbook</a>
+		<img id="imgMenu" src="/images/menu.png" onclick="toggleMenu();">
 		<ul id="toggleMenu" style="display: none;">
-               <li><a href="index.php">Home</a></li>
+               <li><a href="/index.php">Home</a></li>
                <li>
                    <a href="#"><b>스마트 콘텐츠 교육</b></a>                 
                    <ul class="subMenu">
